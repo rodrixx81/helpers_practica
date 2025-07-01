@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h3>Sin clearfix (Contenedor colapsa)</h3>
+<div style="background: #eee; padding: 10px; border: 1px solid #ccc;">
+<div class="float-start bg-primary text-white p-3" style="width:
+30%;">Caja 1</div>
+<div class="float-start bg-success text-white p-3 ms-2" style="width:
+30%;">Caja 2</div>
+<div class="float-start bg-danger text-white p-3 ms-2" style="width:
+30%;">Caja 3</div>
+</div>
+<h3>Con clearfix (Contenedor contiene las cajas)</h3>
+<div class="clearfix" style="background: #eee; padding: 10px; border: 1px
+solid #ccc;">
+<div class="float-start bg-primary text-white p-3" style="width:
+30%;">Caja 1</div>
+<div class="float-start bg-success text-white p-3 ms-2" style="width:
+30%;">Caja 2</div>
+<div class="float-start bg-danger text-white p-3 ms-2" style="width:
+30%;">Caja 3</div>
+</div>
+</body>
+</html>
