@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+
+  <!-- Incluir Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Incluir Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <style>
+    .hero-section {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 120px 0;
+      position: relative;
+      z-index: 1;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-section p {
+      font-size: 1.25rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .btn-custom {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      transform: scale(1.05);
+      background-color: #0056b3;
+    }
+
+    .card-container {
+      margin-top: 50px;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-scrolled {
+      background-color: #343a40;
+      transition: background-color 0.3s;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      color: #6c757d;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-link {
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #0056b3 !important;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Página</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej1.html">ej1</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej2.html">ej2</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej3.html">ej3</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej4.html">ej4</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej5.html">ej5</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej6.html">ej6</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej7.html">ej7</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej8.html">ej8</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej9.html">ej9</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej10.html">ej10</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej11.html">ej11</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej12.html">ej12</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej13.html">ej13</a></li>
+          <li class="nav-item"><a class="nav-link" href="ej14.html">ej14</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección principal (hero) -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Bienvenidos a Mi Página Principal</h1>
+      <p>Ejercicio de enlaces a páginas secundarias</p>
+    </div>
+  </section>
+
+  <!-- Enlaces a las páginas secundarias -->
+  <section class="container card-container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej1</h5>
+            <p class="card-text">Explora la primera sección con más detalles sobre nuestros servicios.</p>
+            <a href="ej1.html" class="btn btn-primary btn-custom">Ir a Página 1</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej2</h5>
+            <p class="card-text">Descubre más sobre nuestras propuestas y servicios avanzados.</p>
+            <a href="ej2.html" class="btn btn-success btn-custom">Ir a Página 2</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej3</h5>
+            <p class="card-text">Accede a más información sobre nuestros servicios adicionales y beneficios.</p>
+            <a href="ej3.html" class="btn btn-warning btn-custom">Ir a Página 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="container card-container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej4</h5>
+            <p class="card-text">Explora la primera sección con más detalles sobre nuestros servicios.</p>
+            <a href="ej4.html" class="btn btn-primary btn-custom">Ir a Página 4</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej5</h5>
+            <p class="card-text">Descubre más sobre nuestras propuestas y servicios avanzados.</p>
+            <a href="ej5.html" class="btn btn-success btn-custom">Ir a Página 5</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej6</h5>
+            <p class="card-text">Accede a más información sobre nuestros servicios adicionales y beneficios.</p>
+            <a href="ej6.html" class="btn btn-warning btn-custom">Ir a Página 6</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="container card-container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej7</h5>
+            <p class="card-text">Explora la primera sección con más detalles sobre nuestros servicios.</p>
+            <a href="ej7.html" class="btn btn-primary btn-custom">Ir a Página 7</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej8</h5>
+            <p class="card-text">Descubre más sobre nuestras propuestas y servicios avanzados.</p>
+            <a href="ej8.html" class="btn btn-success btn-custom">Ir a Página 8</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej9</h5>
+            <p class="card-text">Accede a más información sobre nuestros servicios adicionales y beneficios.</p>
+            <a href="ej9.html" class="btn btn-warning btn-custom">Ir a Página 9</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section class="container card-container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej10</h5>
+            <p class="card-text">Explora la primera sección con más detalles sobre nuestros servicios.</p>
+            <a href="ej10.html" class="btn btn-primary btn-custom">Ir a Página 10</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej11</h5>
+            <p class="card-text">Descubre más sobre nuestras propuestas y servicios avanzados.</p>
+            <a href="ej11.html" class="btn btn-success btn-custom">Ir a Página 11</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej12</h5>
+            <p class="card-text">Accede a más información sobre nuestros servicios adicionales y beneficios.</p>
+            <a href="ej12.html" class="btn btn-warning btn-custom">Ir a Página 12</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="container card-container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej13</h5>
+            <p class="card-text">Explora la primera sección con más detalles sobre nuestros servicios.</p>
+            <a href="ej13.html" class="btn btn-primary btn-custom">Ir a Página 13</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ej14</h5>
+            <p class="card-text">Descubre más sobre nuestras propuestas y servicios avanzados.</p>
+            <a href="ej14.html" class="btn btn-success btn-custom">Ir a Página 14</a>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+
+
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2025 Mi Página. Todos los derechos reservados.</p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+  </footer>
+
+  <!-- Bootstrap JS y Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
